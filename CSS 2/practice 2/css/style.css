@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;700&display=swap');
+/* importing the fonts from 'Google Fonts' */
+
+/* we can use box-shadow and transition in designing - using 'mdn' at the end of each search will help get the understading of the syntax and its usage */
+
+body{
+    background: linear-gradient(90deg, #acc3ee 0%, #1010d3 100%); /* linear-gradient Usage */
+    color: #ffffff;
+}
+
+h1{
+    font-size: 70px;    
+    text-align: center;
+    margin-top: 15%;
+    color: yellow;
+    font-family: "DynaPuff" ;
+}
+span{
+    color: red;
+}
+
+p{
+    font-size: 20px;
+    text-align: center; 
+    font-family: "DynaPuff";    
+    font-weight: 400;
+    margin-top: 2%;
+}
+
+/* Buttons */
+
+button{
+    margin: auto;
+    margin-top: 5%;
+    display: block; /* changed the button from inline to block - i.e, it will behave like a div */
+}
+
+.btn{
+    background-color: transparent;
+    border: 2px solid #1f1f1f;
+    border-radius: 0.6em;
+    font-size: 1.2rem;
+    padding: 1.2em 2.5em;
+    cursor: grab; /* this changes the cursor at the button, identifiable */
+    text-align: center;
+    text-transform: uppercase ;
+    font-family: "DynaPuff";
+    font-weight: 900;
+}
+
+.btn:hover{
+    /* when the cursor hovers over the 'btn' */
+    color: #ffffff;
+    outline: 0;
+}
+
+.robo{
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.robo:hover{
+    box-shadow: 0 0 40px 40px #1f1f1f inset;
+    /* only when in this place 'box-shadow' is defined does it take effect as used in the above mention */
+}
+
+/* This part is for the media to arrange */
+@media screen and (max-width: 800px){
+    
+    body{
+        background: orange;
+
+    }
+    h1{
+        font-size: 40px;
+        color: #1010d3;
+    }
+    span{
+        font-size: 40px;
+    }
+    p{
+        font-size: 10px;
+    }
+
+}
+
+@media screen and (max-width: 600px) and (min-width: 400px) {
+    body{
+        background: crimson;
+    }    
+    h1{
+        font-size: 40px;
+    }
+    span{
+        font-size: 40px;
+        color: #ffffff;
+    }
+    p{
+        font-size: 10px;
+    }
+}
+
+/* with the use of @media screen and .... we are able to control the screen-change web view  */

@@ -1,0 +1,134 @@
+body{
+    background-image: url(../images/bg.png);
+    background-position:  center;
+    background-size: cover;
+    height: 100vh;
+    margin: 0 5%;
+}
+nav{
+    display: flex;
+    /* This will start flexbox in the navigation tags */
+    flex-direction: row;
+    height: 20vh;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 25px;
+}
+
+nav .nav-menu-icon{
+
+display: none;
+}
+
+nav .nav-items{
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+
+}
+
+.brand-img{
+    flex: 1;
+    margin: auto;
+}
+
+.nav-logo{
+    display: block;
+}
+
+.brand-img{
+    height: 80px;
+}
+
+/* Working on the navigation button */
+.nav-button{
+    background-color: #e03b8b;
+    border: none;
+    padding: 5px 40px;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex:  1;
+    height: 80vh;
+
+}
+
+.col{
+    display: flex;
+    flex: 0.5;
+    min-height: 100%;
+}
+
+.col-2 {
+    overflow: hidden;
+}
+
+.phone-img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 80%;
+
+}
+
+.col-1{
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #ffffff;
+
+}
+
+.col-1 p {
+    font-size: 20px;
+
+}
+
+.col-1 h1 {
+    font-size: 60px;
+    margin: 20px 0;
+
+}
+
+.google-play-img{
+    height: 90px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+    /* changes being made mentioned below for when the screen width changes */
+    .phone-image{
+        display: none;
+    }
+
+    nav .nav-items{
+        display: none;
+    }
+
+    nav .nav-menu-icon{
+        display: block;
+        margin: auto;
+    }
+
+    nav .nav-menu-icon i {
+        color: #ffffff;
+        font-size: 30px;
+
+    } 
+
+    .google-play-img {
+        height: 50px;
+    }
+
+
+}

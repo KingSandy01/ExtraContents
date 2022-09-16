@@ -1,0 +1,25 @@
+body{
+    background: linear-gradient(90deg, rgb(197, 197, 233) 0%, rgb(5, 5, 240)  100%);
+}
+/* I want the image to be in the header section  */
+
+header{
+    height: 80vh;
+    background-image: 
+        linear-gradient(
+            to right bottom,
+            rgba(219, 11, 94, 0.76),
+            rgba(111, 0, 237, 0.562)),
+        url(/image/cycleman.jpeg);
+    background-size: cover;
+    background-position: top;
+
+    /* to make the image in and the shape of cut we can use the undermentioned and take the angle and points reference from 
+      the website is clippy
+      set the desired figure and points as u need and then copy the code that forms under that page and paste here
+      */
+      clip-path: polygon(100% 0, 100% 53%, 74% 79%, 0 62%, 0 0);
+     /* this is the copied code from clippy */
+
+
+}

@@ -1,0 +1,37 @@
+
+/* .container{
+    display: flex;
+    border: 2px solid black;
+    flex-direction: row;
+    height: 300px; */
+    /* This was for setting the direction for the flex usage  */
+    /* justify-content: center;
+    align-items: baseline;
+
+} */
+
+/* h1{
+    font-size: 50px;
+    color: black;
+
+} */
+
+/* The Above Set of codes was to teach about the flex-direction and align and justify features of flex  */
+
+/* The undermentioned content is for the flex-wrap */
+
+.container{
+    display: flex;
+    border: 2px solid black;
+    flex-direction: row;
+    height: 200px;
+    width: 300px;
+    align-items: baseline;
+
+    /* The flex-wrap feature will now wrap the contents inside the specified width area */
+    
+    flex-wrap: wrap;
+
+    /* to get the older contents, comment this section and un-comment the older section */
+
+}

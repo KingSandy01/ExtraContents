@@ -1,0 +1,34 @@
+
+body{
+    
+    font-family: sans-serif;
+    margin: 0;
+    background: linear-gradient(to right, #007991, #78ffd6);
+}
+
+.bg{
+    height: 100vh;
+    width: 100%;
+}
+
+.form > * {
+ /* The above marking ' > * ' denotes the first child of the class 'form' */
+
+    border: 0;
+    padding: 10px;
+    background: #fff;
+    line-height: 30px;
+    font-size: 15px;
+}
+
+.form input[type="submit"]{
+    background: #2980b9;
+    /* border: 1px solid #2980b9; */
+    color: #fff;
+}
+
+.bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

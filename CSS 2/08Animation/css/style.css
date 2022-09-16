@@ -1,0 +1,39 @@
+body {
+    background: linear-gradient(90deg, #00d2ff 0%, #3a4fd5 100%);
+    color: #ffffff;
+}
+
+.container{
+    height: 100vh;
+    width: 100vh;
+    }
+
+.wrapper{
+    margin: 0px auto;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 3px solid black;
+}
+
+.left,
+.right{
+    height: 100px;
+    width: 100px;
+    background-color: #ffffff;
+
+    /* animation: bounce 3s infinite;   */
+    animation: pump 1.5s linear infinite;
+}
+
+@keyframes pump {
+    0%,
+    100%{
+        transform: scale(0);
+    }
+    50%{
+        transform: scale(1);
+    }
+}
